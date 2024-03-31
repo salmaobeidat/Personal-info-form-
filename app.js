@@ -23,7 +23,8 @@ let address = document.getElementById("address").value;
 //creating cards container
 let cardsContainer= document.getElementById("CardsContainer");
 let card =document.createElement("newCard");
-card.innerHTML=` <div class="card col-4 m-2" style="width: 18rem;">
+card.classList.add("card","col-3","m-2","p-0");
+card.innerHTML=`<div class="card" style="width:100%;">
 <img src="images/personal.png" class="card-img-top" alt="personal image">
 <div class="card-body my-2 text-start">
     <h5 class="mb-2"><b>Username:</b> ${fullName}</h5>
